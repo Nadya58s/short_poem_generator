@@ -1,9 +1,14 @@
 body {
-  background-color: #f9f7fe;
+  /*background-color: #f9f7fe;*/
+  background-image: url("images/plant.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 a {
-  color: #da492c;
+  color: #da2cdad3;
   text-decoration: none;
 }
 
@@ -26,7 +31,7 @@ h1 {
 }
 
 .form-container {
-  background-color: white;
+  background: rgba(255, 254, 254, 0.438);
   margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
@@ -69,11 +74,10 @@ form {
 
 .poem {
   font-size: 16px;
-
-  background-color: #fff;
+  background: rgba(255, 254, 254, 0.438);
   padding: 20px;
   line-height: 1.5;
-  border-left: 2.5px solid #da492c;
+  border-left: 1.5px solid #da2cdad3;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
@@ -82,7 +86,7 @@ form {
 }
 
 .poem strong {
-  color: #da492c;
+  color: #da2cdad3;
 }
 
 footer {
