@@ -4,50 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Short Poem AI Gemeratort</title>
+    <title>AI Poem Gemeratort</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to Short Poem AI Gemeratort</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Welcome AI Poem Gemeratort</h1>
+      </header>
 
-    <!-- main actions -->
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of your poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-        <!-- submit button -->
-      </form>
-      <!-- user can see the generated poem here -->
-      The poem will go here
-      <br />
-      The poem will go here
-    </main>
-    <!-- user can enter a topic here -->
+      <!-- main actions -->
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of your poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+          <!-- submit button -->
+        </form>
+        <!-- user can see the generated poem here -->
+        <div class="poem">
+          The poem will go here
+          <br />
+          The poem will go here
+        </div>
+      </main>
+      <!-- user can enter a topic here -->
 
-    <!-- footer -->
-    <footer>
-      This AI project was coded by
-      <a href="https://nadiasylvester.netlify.app" target="_blank"
-        >Nadia Sylvester</a
-      >
-      and is open-sourced on
-      <a
-        href="https://github.com/Nadya58s/short_poem_generator"
-        target="_blank"
-      >
-        GitHub</a
-      >
-      and is
-      <a href="" target="_blank">hosted on Netlify</a>.
-    </footer>
-
+      <!-- footer -->
+      <footer>
+        This AI project was coded by
+        <a href="https://nadiasylvester.netlify.app" target="_blank"
+          >Nadia Sylvester</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/Nadya58s/short_poem_generator"
+          target="_blank"
+        >
+          GitHub</a
+        >
+        and is
+        <a href="" target="_blank">hosted on Netlify</a>.
+      </footer>
+    </div>
     <script src="./src/index.js"></script>
   </body>
 </html>

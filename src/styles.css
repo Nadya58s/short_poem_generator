@@ -1,4 +1,72 @@
 body {
-  background: salmon;
+  background-color: #f9f7fe;
+}
+
+a {
+  color: #da492c;
+  text-decoration: none;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
   text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5; /* 50px */
+  color: #272044;
+}
+
+form {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(65, 50, 100, 0.08);
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.instructions {
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: #272044;
+}
+
+.submit-button {
+  margin-left: 10px;
+  background: linear-gradient(90deg, #da2cda 0%, #e57526 100%);
+  color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 14px 24px;
+  width: 150px;
+  font-size: 16px;
+  box-shadow: 0 10px 20px rgba(65, 50, 100, 0.08);
+}
+
+.poem {
+  font-size: 16px;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 1.5;
+  border-left: 2.5px solid #da492c;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
 }
