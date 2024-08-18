@@ -1,17 +1,27 @@
-function generatePoem(event) {
-  event.preventDefault();
- 
-  let poemElement = document.querySelector("#poem");
-
-  // adding typewriter effect
-  new Typewriter('#poem', {
-    strings: "This is the where the poem generator goes",
+function displayPoem(response) {
+  new Typewriter("#poem", {
+    strings: response.data.answer,
     autoStart: true,
-    delay: 14,
+    delay: 1,
     cursor: "",
   });
+}
 
+function generatePoem(event) {
+  event.preventDefault();
 
+  let instructionsInput = document.querySelector("#user-instructions");
+  let apiKey = "2046c535afeb092fo82f1d306d8a2b2t";
+  let context =
+    "You are a romantic Poem expert and love to write short poems. You mission is to generate a 4 line poem in basic HTML and separate each line with a <br />. Make sure to follow the user instructions. Do not include a title to the poem. Please make sure you always Sign the poem with 'Dragon Designer AI' inside a <strong> element and always has to be at the end of the poem and NOT at the beginning";
+  let prompt = `User instructions: Generate a poem about ${instructionsInput.value}`;
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">⏳ Generating a poem about ${instructionsInput.value}</div>`;
+
+  axios.get(apiURL).then(displayPoem);
 }
 
 let poemFormElement = document.querySelector("#poem-generator-form");
